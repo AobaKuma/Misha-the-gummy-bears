@@ -355,6 +355,9 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
 				</blackXenotypeList>
 				<apparelList>
+					<li>Misha_Apparel_Overhead_Airf</li>
+					<li>Misha_Apparel_Overhead_Army</li>
+					<li>Misha_Apparel_Overhead_Navy</li>
 					<li>Misha_Apparel_Onskin_Airf</li>
 					<li>Misha_Apparel_Onskin_Army</li>
 					<li>Misha_Apparel_Onskin_Navy</li>
