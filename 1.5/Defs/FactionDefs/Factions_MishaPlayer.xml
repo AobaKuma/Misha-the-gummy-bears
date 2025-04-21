@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>Misha_PlayerFaction</defName>
+		<label>new site</label>
+		<description>A newly established gummy bears, how sweet!</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Misha_Colonist</basicMemberKind>
+		<pawnSingular>Colonist</pawnSingular>
+		<pawnsPlural>Colonist</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>MishaStory</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>Misha_UI/icon_Player</factionIconPath>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+</Defs>

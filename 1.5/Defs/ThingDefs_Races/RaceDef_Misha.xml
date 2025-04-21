@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Alien_Misha</defName>
+		<label>Misha</label>
+		<description>可愛小熊</description>
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0</maleGenderProbability>
+				<immuneToAge>false</immuneToAge>
+				<canLayDown>true</canLayDown>
+				<maxDamageForSocialfight>8</maxDamageForSocialfight>
+				<humanRecipeImport>true</humanRecipeImport>
+				<disallowedTraits>
+					<li>
+						<defName>Wimp</defName>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
+						<defName>Delicate</defName>
+					</li>
+				</disallowedTraits>
+				<alienPartGenerator>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="AlienRace.ColorGenerator_SkinColorMelanin">
+								<minMelanin>0</minMelanin>
+								<maxMelanin>0</maxMelanin>
+							</first>
+							<second Class="AlienRace.ColorGenerator_CustomAlienChannel">
+								<colorChannel>skin_1</colorChannel>
+							</second>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>5</weight>
+										<only>(1,1,1)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<headOffset>(0, -0.15)</headOffset>
+					<atlasScale>2</atlasScale>
+					<borderScale>1</borderScale>
+					<headTypes Inherit="False">
+						<li>Misha_AverageNormal_A</li>
+						<li>Misha_AverageNormal_B</li>
+						<li>Misha_AverageNormal_C</li>
+						<li>Misha_AverageNormal_D</li>
+						<li>Misha_AverageNormal_E</li>
+						<li>Misha_AverageNormal_F</li>
+						<li>Misha_AverageNormal_G</li>
+						<li>Misha_AverageNormal_H</li>
+						<li>Misha_AverageNormal_I</li>
+						<li>Misha_AverageNormal_J</li>
+						<li>Misha_AverageNormal_K</li>
+						<li>Misha_AverageNormal_L</li>
+					</headTypes>
+					<bodyTypes Inherit="False">
+						<li>Thin</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+					<bodyAddons>
+						<li>
+							<name>hair</name>
+							<path>Moyo/Hair/MoyoHair</path>
+							<shaderType>CutoutComplex</shaderType>
+							<colorChannel>hair</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<!-- - -->
+							<conditions>
+								<BodyPart>
+									<bodyPart>Head</bodyPart>
+									<drawWithoutPart>false</drawWithoutPart>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Moyo2_BigHelmet</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
+							<offsets>
+								<north>
+									<layerOffset>-0.325</layerOffset>
+								</north>
+								<south>
+									<layerOffset>-0.278</layerOffset>
+								</south>
+								<east>
+									<layerOffset>-0.278</layerOffset>
+								</east>
+								<west>
+									<layerOffset>-0.278</layerOffset>
+								</west>
+							</offsets>
+							<!-- - -->
+							<inFrontOfBody>true</inFrontOfBody>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						</li>
+						<li>
+							<name>hair(back)</name>
+							<path>Moyo/Hair/MoyoBackHair</path>
+							<shaderType>CutoutComplex</shaderType>
+							<colorChannel>hair</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<!-- - -->
+							<conditions>
+								<BodyPart>
+									<bodyPart>Head</bodyPart>
+									<drawWithoutPart>false</drawWithoutPart>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Moyo2_BigHelmet</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
+							<offsets>
+								<north>
+									<!-- <layerOffset>-0.345</layerOffset> -->
+									<layerOffset>-0.324</layerOffset>
+								</north>
+								<south>
+									<layerOffset>-0.325</layerOffset>
+								</south>
+								<east>
+									<layerOffset>-0.325</layerOffset>
+								</east>
+								<west>
+									<layerOffset>-0.325</layerOffset>
+								</west>
+							</offsets>
+							<!-- - -->
+							<!--<extendedGraphics>
+								<Hediff For="Moyo2_CartelHood">
+									<path>Apparel/Cartel/CartelHoodBack</path>
+									<extendedGraphics>
+										<Job For="LayDownResting">Moyo/Hair/MoyoBackHair</Job>
+										<Job For="Wait_Asleep">Moyo/Hair/MoyoBackHair</Job>
+									</extendedGraphics>
+								</Hediff>
+							</extendedGraphics>-->
+							<inFrontOfBody>true</inFrontOfBody>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<userCustomizable>false</userCustomizable>
+						</li>
+					</bodyAddons>
+					<anchorReplacements>
+						<li>
+							<originalTag>LeftEye</originalTag>
+							<replacement>
+								<rotation>South</rotation>
+								<tag>LeftEye</tag>
+							</replacement>
+							<offsets>
+								<south>
+									<layerOffset>-1.0</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-1.0</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</east>
+								<west>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</west>								
+							</offsets>							
+						</li>
+						<li>
+							<originalTag>LeftEye</originalTag>
+							<replacement>
+								<rotation>West</rotation>
+								<tag>LeftEye</tag>
+							</replacement>
+							<offsets>
+								<south>
+									<layerOffset>-1.0</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-1.0</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</east>
+								<west>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</west>								
+							</offsets>								
+						</li>						
+						<li>
+							<originalTag>RightEye</originalTag>
+							<replacement>
+								<rotation>South</rotation>
+								<tag>RightEye</tag>
+							</replacement>
+							<offsets>
+								<south>
+									<layerOffset>-1.0</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-1.0</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</east>
+								<west>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</west>								
+							</offsets>	
+						</li>
+						<li>
+							<originalTag>RightEye</originalTag>
+							<replacement>
+								<rotation>East</rotation>
+								<tag>RightEye</tag>
+							</replacement>
+							<offsets>
+								<south>
+									<layerOffset>-1.0</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-1.0</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</east>
+								<west>
+									<layerOffset>-2.0</layerOffset>
+									<offset>(-0.1, -0.02)</offset>
+								</west>								
+							</offsets>	
+						</li>						
+					</anchorReplacements>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>
+					<path>Misha_bodies/heads/Misha_headType1</path>
+					<extendedGraphics>
+						<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+							Misha_bodies/heads/Misha_headTypeGhoul
+						</Hediff>
+					</extendedGraphics>
+				</head>
+				<body>
+					<path>Misha_bodies/bodies/Naked_Female</path>
+					<extendedGraphics>
+						<Age For="HumanlikeBaby" MayRequire="Ludeon.RimWorld.Biotech">
+							Misha_bodies/bodies/Naked_Female
+						</Age>
+						<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">
+							<path>Misha_bodies/bodies/Naked_Female</path>
+							<extendedGraphics>
+								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+									Misha_bodies/bodies/Ghoul_Female
+								</Hediff>
+							</extendedGraphics>
+						</Age>
+						<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">
+							Misha_bodies/bodies/Naked_Female
+						</Age>
+						<Age For="HumanlikeTeenager" MayRequire="Ludeon.RimWorld.Biotech">
+							Misha_bodies/bodies/Naked_Female
+						</Age>
+						<Age For="HumanlikeAdult">
+							<path>Misha_bodies/bodies/Naked_Female</path>
+							<extendedGraphics>
+								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+									Misha_bodies/bodies/Ghoul_Female
+								</Hediff>
+							</extendedGraphics>
+						</Age>
+					</extendedGraphics>
+				</body>
+				<skull>Things/Pawn/Humanlike/Heads/None_Average_Skull</skull>
+				<skeleton>Things/Pawn/Humanlike/HumanoidDessicated</skeleton>
+				<skinShader>Cutout</skinShader>
+				<apparel>
+					<bodyTypeFallback>Thin</bodyTypeFallback>
+				</apparel>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Misha_Hair</li>
+						</styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+				<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>BodyType</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Voice</li>
+					<li>Headbone</li>
+					<li>Head</li>
+					<li>Jaw</li>
+					<li>HairColor</li>
+				</blackEndoCategories>
+				<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">HairStyle</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">EyeColor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">BeardStyle</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Fur</li>
+				</blackGeneTags>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+				</blackGeneList>
+				<blackXenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
+				</blackXenotypeList>
+				<apparelList>
+					<li>Misha_Apparel_Onskin_Airf</li>
+					<li>Misha_Apparel_Onskin_Army</li>
+					<li>Misha_Apparel_Onskin_Navy</li>
+					<li>Misha_Apparel_Middle_Airf</li>
+					<li>Misha_Apparel_Middle_Army</li>
+					<li>Misha_Apparel_Middle_Navy</li>
+					<li>Misha_Apparel_Shell_Airf</li>
+					<li>Misha_Apparel_Shell_Army</li>
+					<li>Misha_Apparel_Shell_Navy</li>
+				</apparelList>
+				<whiteXenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
+				</whiteXenotypeList>
+			</raceRestriction>
+		</alienRace>
+		<!--=============================================================================================================================-->
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>150</lifeExpectancy>
+			<bloodDef>Filth_Blood</bloodDef>
+			<bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
+			<!-- 피 -->
+			<leatherDef>Leather_Human</leatherDef>
+			<nameCategory>HumanStandard</nameCategory>
+			<body>Misha</body>
+			<!-- 피 -->
+			<renderTree>Humanlike</renderTree>
+			<baseBodySize>0.8</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>2</baseHungerRate>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>18</gestationPeriodDays>
+			<meatMarketValue>0.8</meatMarketValue>
+			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<soundCallIntervalRange>2000~5000</soundCallIntervalRange>
+			<canBecomeShambler>true</canBecomeShambler>
+			<knowledgeCategory MayRequire="Ludeon.RimWorld.Anomaly">Basic</knowledgeCategory>
+			<anomalyKnowledge>1</anomalyKnowledge>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+					<headOffset>(0, -0.03)</headOffset>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeChild</def>
+					<minAge>3</minAge>
+					<headOffset>(0, -0.015)</headOffset>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>9</minAge>
+					<headOffset>(0, -0.02)</headOffset>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeTeenager</def>
+					<minAge>13</minAge>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeAdult</def>
+					<minAge>18</minAge>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<PatientBedRest>0</PatientBedRest>
+				<Patient>0</Patient>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<BasicWorker>3</BasicWorker>
+				<Firefighter>7</Firefighter>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>7</Hunting>
+				<Growing>7</Growing>
+				<Mining>7</Mining>
+				<Crafting>7</Crafting>
+				<Tailoring>7</Tailoring>
+				<PlantCutting>7</PlantCutting>
+				<Doctor>10</Doctor>
+				<Warden>10</Warden>
+				<Construction>10</Construction>
+				<Art>10</Art>
+				<Smithing>13</Smithing>
+				<Research>13</Research>
+				<DarkStudy MayRequire="Ludeon.RimWorld.Anomaly">13</DarkStudy>
+			</lifeStageWorkSettings>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
+					<!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to
+					becoming adults -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>
+					<!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+					<li>(14,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+					<li>(16,100)</li>
+					<li>(50,100)</li>
+					<li>(60,30)</li>
+					<li>(70,18)</li>
+					<li>(80,10)</li>
+					<li>(90,3)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<RoyalFavorValue>4</RoyalFavorValue>
+			<Mass>75</Mass>
+			<MoveSpeed>5.8</MoveSpeed>
+			<Flammability>1</Flammability>
+			<ComfyTemperatureMax>18</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-125</ComfyTemperatureMin>
+			<MeatAmount>80</MeatAmount>
+			<LeatherAmount>75</LeatherAmount>
+			<CarryingCapacity>75</CarryingCapacity>
+			<ImmunityGainSpeed>1</ImmunityGainSpeed>
+			<PsychicSensitivity>0.6</PsychicSensitivity>
+			<MeleeDodgeChance>1</MeleeDodgeChance>
+			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+			<DrugSynthesisSpeed>1</DrugSynthesisSpeed>
+			<ResearchSpeed>1</ResearchSpeed>
+			<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">1.15</HackingSpeed>
+			<MedicalTendSpeed>1</MedicalTendSpeed>
+			<MedicalTendQuality>1</MedicalTendQuality>
+			<MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
+			<PainShockThreshold>0.75</PainShockThreshold>
+			<ToxicResistance>0.25</ToxicResistance>
+		</statBases>
+		<butcherProducts/>
+		<recipes/>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>16.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps/>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="FactionBase">
+    <defName>Misha_OutlanderCivil</defName>
+    <label>佔位符</label>
+    <description>佔位符</description>
+    <colorSpectrum>
+      <li>(0.75, 0.3, 0.3)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>10</configurationListOrderPriority>
+    <pawnSingular>bear</pawnSingular>
+    <pawnsPlural>bears</pawnsPlural>
+    <categoryTag>Misha</categoryTag>
+    <listOrderPriority>30</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <autoFlee>false</autoFlee>
+
+    <leaderTitle>Bear Bearer</leaderTitle>
+    <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <fixedLeaderKinds>
+      <li>Misha_Leader</li>
+    </fixedLeaderKinds>
+
+    <factionIconPath>Misha_UI/icon</factionIconPath>
+    <techLevel>Spacer</techLevel>
+    <factionNameMaker>Misha_FactionName</factionNameMaker>
+    <settlementNameMaker>Misha_FactionName_Base</settlementNameMaker>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+    </allowedMemes>
+    <disallowedPrecepts>
+      <li>Slavery_Classic</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+    </disallowedPrecepts>
+    <structureMemeWeights>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Ideological>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0.3</Structure_OriginChristian>
+    </structureMemeWeights>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>MishaStory</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-60~65</allowedArrivalTemperatureRange>
+    <raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,80)</li>
+        <li>(200, 100)</li>
+        <li>(2300, 120)</li>
+        <li>(3000,400)</li>
+        <li>(8000,2000)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <options>
+          <Misha_Colonist>1</Misha_Colonist>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Misha_Colonist>1</Misha_Colonist>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Misha_Colonist>1</Misha_Colonist>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+        </carriers>
+        <guards>
+          <Misha_Colonist>1</Misha_Colonist>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Misha_Colonist>1</Misha_Colonist>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Misha_Colonist>1</Misha_Colonist>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Misha_Colonist>1</Misha_Colonist>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Misha_Colonist>1</Misha_Colonist>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Misha_Colonist>1</Misha_Colonist>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+  </FactionDef>
+
+  <RulePackDef>
+    <defName>Misha_FactionName</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Gummy bears</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Misha_FactionName_Base</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Mama bear - [Num0][Num1]</li>
+        
+        <li>Num0->0</li>
+        <li>Num0->1</li>
+        <li>Num0->2</li>
+        <li>Num0->3</li>
+        <li>Num0->4</li>
+        <li>Num0->5</li>
+        <li>Num0->6</li>
+        <li>Num0->7</li>
+        <li>Num0->8</li>
+        <li>Num0->9</li>
+
+        <li>Num1->0</li>
+        <li>Num1->1</li>
+        <li>Num1->2</li>
+        <li>Num1->3</li>
+        <li>Num1->4</li>
+        <li>Num1->5</li>
+        <li>Num1->6</li>
+        <li>Num1->7</li>
+        <li>Num1->8</li>
+        <li>Num1->9</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

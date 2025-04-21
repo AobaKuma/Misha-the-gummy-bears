@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HairDef Abstract="True" Name="BaseMishaHair">
+		<styleTags>
+			<li>Misha_Hair</li>
+		</styleTags>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairA</defName>
+		<label>a</label>
+		<texPath>Misha_bodies/hairs/Base_hair1</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairB</defName>
+		<label>b</label>
+		<texPath>Misha_bodies/hairs/Base_hair2</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairC</defName>
+		<label>c</label>
+		<texPath>Misha_bodies/hairs/Base_hair3</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairD</defName>
+		<label>d</label>
+		<texPath>Misha_bodies/hairs/Base_hair4</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairE</defName>
+		<label>e</label>
+		<texPath>Misha_bodies/hairs/Base_hair5</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairF</defName>
+		<label>f</label>
+		<texPath>Misha_bodies/hairs/Base_hair6</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairG</defName>
+		<label>g</label>
+		<texPath>Misha_bodies/hairs/Base_hair7</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairH</defName>
+		<label>h</label>
+		<texPath>Misha_bodies/hairs/Base_hair8</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairI</defName>
+		<label>i</label>
+		<texPath>Misha_bodies/hairs/Base_hair9</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairJ</defName>
+		<label>j</label>
+		<texPath>Misha_bodies/hairs/Base_hair10</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairK</defName>
+		<label>k</label>
+		<texPath>Misha_bodies/hairs/Base_hair11</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairL</defName>
+		<label>l</label>
+		<texPath>Misha_bodies/hairs/Base_hair12</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairM</defName>
+		<label>m</label>
+		<texPath>Misha_bodies/hairs/Base_hair13</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairN</defName>
+		<label>n</label>
+		<texPath>Misha_bodies/hairs/Base_hair14</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseMishaHair">
+		<defName>Misha_HairO</defName>
+		<label>o</label>
+		<texPath>Misha_bodies/hairs/Base_hair15</texPath>
+	</HairDef>
+</Defs>

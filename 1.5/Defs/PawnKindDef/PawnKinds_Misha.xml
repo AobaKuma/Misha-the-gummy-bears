@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef Name="Misha_BasePawn" Abstract="True">
+		<combatPower>50</combatPower>
+		<race>Alien_Misha</race>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+		<defaultFactionType>Misha_OutlanderCivil</defaultFactionType>
+		<apparelMoney>
+			<min>100</min>
+			<max>1200</max>
+		</apparelMoney>
+		<initialWillRange>10~20</initialWillRange>
+		<initialResistanceRange>10~40</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Misha_BasePawn">
+		<defName>Misha_Colonist</defName>
+		<label>colonist</label>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<itemQuality>Poor</itemQuality>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<isFighter>false</isFighter>
+		<initialWillRange>10~30</initialWillRange>
+		<invNutrition>1</invNutrition>
+		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+		<maxGenerationAge>55</maxGenerationAge>
+		<minGenerationAge>13</minGenerationAge>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>MishaStory_Refugee_Child</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>Misha_Civilian</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>200</min>
+			<max>600</max>
+		</apparelMoney>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Misha_Civilian</requiredTag>
+				<stuff>Synthread</stuff>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(186, 181, 171)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="Misha_BasePawn">
+		<defName>Misha_Leader</defName>
+		<label>misha leader</label>
+		<itemQuality>Normal</itemQuality>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<isFighter>false</isFighter>
+		<factionLeader>true</factionLeader>
+		<initialWillRange>10~30</initialWillRange>
+		<invNutrition>1</invNutrition>
+		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+		<maxGenerationAge>55</maxGenerationAge>
+		<minGenerationAge>13</minGenerationAge>
+		<apparelTags>
+			<li>Misha_Civilian</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>200</min>
+			<max>600</max>
+		</apparelMoney>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Misha_Civilian</requiredTag>
+				<stuff>Synthread</stuff>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(186, 181, 171)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Misha_BasePawn">
+		<defName>Misha_OutlanderCivilian</defName>
+		<label>misha civilian</label>
+		<apparelTags>
+			<li>Misha_Civilian</li>
+		</apparelTags>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Misha_AverageNormal_A</defName>
+    <graphicPath>Misha_bodies/heads/Misha_headType1</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Misha_AverageNormal_B</defName>
+    <graphicPath>Misha_bodies/heads/Misha_headType2</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Misha_AverageNormal_C</defName>
+    <graphicPath>Misha_bodies/heads/Misha_headType3</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Misha_AverageNormal_D</defName>
+    <graphicPath>Misha_bodies/heads/Misha_headType4</graphicPath>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Misha_AverageNormal_E</defName>
+    <graphicPath>Misha_bodies/heads/Misha_headType5</graphicPath>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Misha_AverageNormal_F</defName>
+    <graphicPath>Misha_bodies/heads/Misha_headType6</graphicPath>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Misha_AverageNormal_G</defName>
+    <graphicPath>Misha_bodies/heads/Misha_headType7</graphicPath>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Misha_AverageNormal_H</defName>
+    <graphicPath>Misha_bodies/heads/Misha_headType8</graphicPath>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Misha_AverageNormal_I</defName>
+    <graphicPath>Misha_bodies/heads/Misha_headType9</graphicPath>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Misha_AverageNormal_J</defName>
+    <graphicPath>Misha_bodies/heads/Misha_headType10</graphicPath>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Misha_AverageNormal_K</defName>
+    <graphicPath>Misha_bodies/heads/Misha_headType11</graphicPath>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Misha_AverageNormal_L</defName>
+    <graphicPath>Misha_bodies/heads/Misha_headType12</graphicPath>
+  </HeadTypeDef>
+</Defs>

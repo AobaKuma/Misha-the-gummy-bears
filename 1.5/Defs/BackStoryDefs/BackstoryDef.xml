@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BackstoryDef Name="BaseMishaBackStory" Abstract="True">
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<shuffleable>true</shuffleable>
+		<disallowedTraits>
+			<Psychopath />
+			<DrugDesire />
+			<Nerves />
+			<Neurotic />
+			<Industriousness />
+			<Abrasive />
+			<Greedy />
+			<Jealous />
+			<Ascetic />
+			<Pyromaniac />
+			<DislikesMen />
+			<DislikesWomen />
+		    <Beauty>-1</Beauty>
+	        <Beauty>-2</Beauty>
+		</disallowedTraits>
+		<spawnCategories>
+			<li>MishaStory</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="BaseMishaBackStory">
+		<defName>Misha_Custom1</defName>
+		<title>佔位符</title>
+		<titleShort>佔位符</titleShort>
+		<description>佔位符</description>
+		<slot>Childhood</slot>
+	</BackstoryDef>
+	<BackstoryDef ParentName="BaseMishaBackStory">
+		<defName>Misha_Custom2</defName>
+		<title>佔位符</title>
+		<titleShort>佔位符</titleShort>
+		<description>佔位符</description>
+		<slot>Adulthood</slot>
+	</BackstoryDef>
+	<BackstoryDef ParentName="BaseMishaBackStory">
+		<defName>Misha_Custom3</defName>
+		<title>佔位符</title>
+		<titleShort>佔位符</titleShort>
+		<description>佔位符</description>
+	</BackstoryDef>
+	
+</Defs>		

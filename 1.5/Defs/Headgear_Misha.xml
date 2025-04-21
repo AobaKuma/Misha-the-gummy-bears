@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Overhead -->
+	<ThingDef  ParentName="Misha_ApparelBase" Name="Misha_ApparelOverheadBase" Abstract="True">
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
+		<apparel>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="Misha_ApparelOverheadBase">
+		<defName>Misha_Apparel_Overhead_Airf</defName>
+		<label>headgear Airf</label>
+		<description>佔位符</description>
+		<graphicData>
+			<texPath>Misha_Headgear/Airf/icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<MarketValue>200</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Misha_Headgear/Airf/headgear</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<tags>
+				<li>Misha_Civilian</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="Misha_ApparelOverheadBase">
+		<defName>Misha_Apparel_Overhead_Army</defName>
+		<label>headgear Army</label>
+		<description>佔位符</description>
+		<graphicData>
+			<texPath>Misha_Headgear/Army/icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<MarketValue>200</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Misha_Headgear/Army/headgear</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<tags>
+				<li>Misha_Civilian</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="Misha_ApparelOverheadBase">
+		<defName>Misha_Apparel_Overhead_Navy</defName>
+		<label>headgear Navy</label>
+		<description>佔位符</description>
+		<graphicData>
+			<texPath>Misha_Headgear/Navy/icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<MarketValue>200</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Misha_Headgear/Navy/headgear</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<tags>
+				<li>Misha_Civilian</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+</Defs>
