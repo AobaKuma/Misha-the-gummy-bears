@@ -43,7 +43,7 @@
 							</first>
 						</li>
 					</colorChannels>
-					<headOffset>(0, -0.15)</headOffset>
+					<headOffset>(0, -0.17)</headOffset>
 					<atlasScale>2</atlasScale>
 					<borderScale>1</borderScale>
 					<headTypes Inherit="False">
