@@ -44,6 +44,20 @@
 						</li>
 					</colorChannels>
 					<headOffset>(0, -0.17)</headOffset>
+					<headOffsetDirectional>
+						<north>
+							<offset>(0, 0)</offset>
+						</north>
+						<south>
+							<offset>(0, 0)</offset>
+						</south>
+						<east>
+							<offset>(-0.06, 0)</offset>
+						</east>
+						<west>
+							<offset>(0.06, 0)</offset>
+						</west>
+					</headOffsetDirectional>
 					<atlasScale>2</atlasScale>
 					<borderScale>1</borderScale>
 					<headTypes Inherit="False">
@@ -152,6 +166,139 @@
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<userCustomizable>false</userCustomizable>
 						</li>
+						<li> 
+							<path>Misha_bodies/ears/earLeft/Leftear</path>
+							<conditions>
+								<BodyPart>
+										<bodyPart>Ear</bodyPart>
+										<bodyPartLabel>Left bear ear</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+							</conditions>
+							<extendedGraphics>
+								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Misha_bodies/ears/earLeft/LeftearLeftearGhoul</Hediff>
+							</extendedGraphics>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>base</colorChannel>
+							<drawSize>1</drawSize>
+							<defaultOffset>Tail</defaultOffset>
+							<shaderType>CutoutComplex</shaderType>
+							<offsets>
+								<south>
+									<offset>(0,0)</offset>
+									<layerOffset>-0.274</layerOffset>
+								</south>
+								
+								<north>
+									<offset>(0,0)</offset>
+									<layerOffset>-0.278</layerOffset>
+								</north>
+								
+								<east>
+									<offset>(0,0)</offset>
+									<layerOffset>-0.278</layerOffset>
+								</east>
+								
+								<west>
+									<offset>(0,0)</offset>
+									<layerOffset>-0.278</layerOffset>
+								</west>
+							</offsets>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<alignWithHead>true</alignWithHead>
+							<userCustomizable>false</userCustomizable>
+						</li>
+						<li> 
+							<path>Misha_bodies/ears/earRight/Rightear</path>
+							<conditions>
+								<BodyPart>
+										<bodyPart>Ear</bodyPart>
+										<bodyPartLabel>Right bear ear</bodyPartLabel>
+								</BodyPart>
+								<RotStage>Fresh,Rotting</RotStage>
+							</conditions>
+							<extendedGraphics>
+								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Misha_bodies/ears/earLeft/LeftearGhoul</Hediff>
+							</extendedGraphics>
+							<colorChannel>base</colorChannel>
+							<drawSize>1</drawSize>
+							<defaultOffset>Tail</defaultOffset>
+							<shaderType>CutoutComplex</shaderType>
+							<offsets>
+								<south>
+									<offset>(0,0)</offset>
+									<layerOffset>-0.274</layerOffset>
+								</south>
+								
+								<north>
+									<offset>(0,0)</offset>
+									<layerOffset>-0.278</layerOffset>
+								</north>
+								
+								<east>
+									<offset>(0,0)</offset>
+									<layerOffset>-0.278</layerOffset>
+								</east>
+								
+								<west>
+									<offset>(0,0)</offset>
+									<layerOffset>-0.278</layerOffset>
+								</west>
+							</offsets>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<alignWithHead>true</alignWithHead>
+							<userCustomizable>false</userCustomizable>
+						</li>
+						<li>
+							<name>Misha tail</name>
+							<userCustomizable>false</userCustomizable>
+							<path>Misha_bodies/tail/Misha_tail</path>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>base</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<drawSize>1</drawSize>
+							<angle>0</angle>
+							<defaultOffset>Tail</defaultOffset>
+							<shaderType>CutoutComplex</shaderType>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<conditions>
+							  <BodyPart>
+								<bodyPartLabel>bear tail</bodyPartLabel>
+							  </BodyPart>
+							  <Posture>
+								<drawnStanding>true</drawnStanding>
+								<drawnLaying>true</drawnLaying>
+								<drawnInBed>true</drawnInBed>
+							  </Posture>
+							  <!-- <Apparel>
+								<hiddenUnderApparelTag>
+								  <li>hideMishaear</li>
+								</hiddenUnderApparelTag>
+							  </Apparel> -->
+							  <RotStage>Fresh,Rotting</RotStage>
+							</conditions>
+							<offsets>
+								<south>
+									<offset>(0,0)</offset>
+									<layerOffset>0</layerOffset>
+								</south>
+								
+								<north>
+									<offset>(0,0)</offset>
+									<layerOffset>-0.26</layerOffset>
+								</north>
+							
+								<east>
+									<offset>(0,0)</offset>
+									<layerOffset>-0.29</layerOffset>
+								</east>
+								
+								<west>
+									<offset>(0,0)</offset>
+									<layerOffset>-0.29</layerOffset>
+								</west>
+							</offsets>
+						</li>
 					</bodyAddons>
 					<anchorReplacements>
 						<li>
@@ -245,7 +392,8 @@
 									<offset>(-0.1, -0.02)</offset>
 								</west>								
 							</offsets>	
-						</li>						
+						</li>
+												
 					</anchorReplacements>
 				</alienPartGenerator>
 			</generalSettings>
